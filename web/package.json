@@ -1,0 +1,35 @@
+{
+  "name": "app_vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "wsgi.py",
+  "files": [
+    "COPYRIGHT",
+    "CHANGELOG",
+    "LICENSE",
+    "README",
+    "index.html",
+    "package.json",
+    "bower.json",
+    "src"
+  ],
+  "scripts": {
+    "bowerinstall": "./node_modules/.bin/bower install",
+    "build": "./node_modules/.bin/browserify -e src/main.js -o static/app.js"
+  },
+  "browserify": {
+    "transform": [
+      "vueify"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.8.12",
+    "browserify": "^17.0.0",
+    "vue": "^2.6.12",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.5.1",
+    "vueify": "^9.4.1"
+  }
+}

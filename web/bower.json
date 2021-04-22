@@ -1,0 +1,19 @@
+{
+  "name": "Flask vue",
+  "authors": [],
+  "description": "",
+  "license": "",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.5.0",
+    "bootstrap": "^4.5.0",
+    "fontawesome": "^5.13.1"
+  }
+}

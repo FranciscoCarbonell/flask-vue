@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>App Vue</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{url_for('static', filename='components/bootstrap/dist/css/bootstrap.min.css')}}">
+    </head>
+    <body>
+        <div class="container">
+            <form method="POST" action="/login">
+                <label class="form-label">Username</label>
+                <input type="text" class="form-control" name="username">
+                <label class="form-label">Password</label>
+                <input type="text" class="form-control" name="password">
+                <button class="btn btn-primary">Login</button>
+            </form>
+        </div>
+        <script src="{{url_for('static', filename='components/jquery/dist/jquery.min.js')}}"></script>
+        <script src="{{url_for('static', filename='components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+    </body>
+</html>
